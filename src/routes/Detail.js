@@ -12,7 +12,7 @@ function Detail() {
 
     const json2 = await (
       await fetch(`https://www.betstation1.com/api/member/point`, {method: 'POST', 
-      credentials: 'same-origin', 
+      credentials: 'include', 
       body: 'lang=en',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
