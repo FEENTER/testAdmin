@@ -11,7 +11,12 @@ function Detail() {
     console.log(json);
 
     const json2 = await (
-      await fetch(`https://www.betstation1.com/api/member/get_user_info`)
+      await fetch(`https://www.betstation1.com/api/member/point`, {method: 'POST', 
+      credentials: 'same-origin', 
+      body: 'lang=en',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+      }})
     ).json();
     console.log(json2);
   };
