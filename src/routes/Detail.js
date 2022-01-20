@@ -9,6 +9,11 @@ function Detail() {
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
     console.log(json);
+
+    const json2 = await (
+      await fetch(`https://www.betstation1.com/api/member/get_user_info`)
+    ).json();
+    console.log(json2);
   };
   useEffect(() => {
     getMovie();
