@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>betstation</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
+</head>
+<body>
+    <script>
+        let objPostData = {lang: 'en'};
+        $.ajax({
+            url: 'https://www.betstation1.com/api/member/point',
+            method: 'POST',
+            data: objPostData,
+            xhrFields: { 
+                withCredentials: true 
+            },
+            success: function(resultData) {
+                console.log(resultData);
+            }
+        });
+    </script>
+</body>
+</html>
