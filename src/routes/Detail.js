@@ -15,7 +15,7 @@ function Detail() {
   }, []);
   return (
     <div>
-      <h1>Movie Detail Info X2 {id}</h1>
+      <h1>Movie Detail Info X3 {id}</h1>
       <Link to={`/home`}>Home</Link>&nbsp;
       <Link to={`/bootstrap`}>BootStrap</Link>
     </div>

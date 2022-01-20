@@ -4,7 +4,7 @@ import Home from "./routes/Home";
 import Index from "./routes/Index";
 import BootStrap from "./routes/BootStrap"
 
-/// https://velog.io/@ausg/gh-pages-react-router 리액트 라우터 공부
+/// couldn't find remote ref refs/heads/gh-pages 에러시 npx gh-pages-clean 
 
 function App() {
   return (
