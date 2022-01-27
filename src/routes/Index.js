@@ -1,9 +1,9 @@
-import Home from "./Home";
+import Layout from "./Layout";
 
 function Index() {
     return (
         <div>
-            <Home></Home>
+            <Layout></Layout>
         </div>
     );
 }
