@@ -55,7 +55,7 @@ function Layout() {
                         <Form>
                             <Form.Group className="mb-3" controlId="formBeginDate">
                                 <Form.Label>Begin Date</Form.Label>
-                                <Form.Control value={beginDate} type="text" placeholder="Begin Date" onChange={onChangeBeginDate} />
+                                <Form.Control value={beginDate} type="datetime" placeholder="Begin Date" onChange={onChangeBeginDate} />
                             </Form.Group>
 
                             <Form.Group className="mb-3" controlId="formEndDate">
