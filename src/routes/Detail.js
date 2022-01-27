@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Detail() {
   const { id } = useParams();
-  const getMovie = async () => {
+  const getMovieDetail = async (movieId) => {
     const json = await (
-      await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+      await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${movieId}`)
     ).json();
     console.log(json);
 
@@ -21,8 +21,8 @@ function Detail() {
     console.log(json2);
   };
   useEffect(() => {
-    getMovie();
-  }, []);
+    getMovieDetail(id);
+  }, [id]);
   return (
     <div>
       <h1>Movie Detail Info X3 {id}</h1>
